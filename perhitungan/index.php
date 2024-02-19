@@ -115,7 +115,7 @@
             </div>
             <form method="post">
               <div class="card-body">
-                <p class="text-uppercase text-sm">Rate KR GO By Bulgogi 11.98</p>
+                <p class="text-uppercase text-sm">Rate KR GO By Bulgogi 11.9</p>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
