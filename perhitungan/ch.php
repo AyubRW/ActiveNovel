@@ -26,7 +26,7 @@
   <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href="https://shope.ee/1VUP1cSYFy" target="_blank">
+      <a class="navbar-brand m-0" href="https://bulgogi.store/" target="_blank">
         <img src="./assets/img/logos/logo2.png" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold">Bulgogi.id</span>
       </a>
@@ -157,7 +157,7 @@
       $hitung2 = ($harga_ch + $shipping2 / $coret_ch) * $rate_go + ($fee_co / $coret_ch + $fee_admin + $fee_wh);
       $hasil2 = 'Rp ' . number_format($hitung2, 0, ",", ".");
       $hitung3 = ($harga_ch + $shipping3 / $coret_ch) * $rate_go + ($fee_co / $coret_ch + $fee_admin + $fee_wh);
-      $hasil2 = 'Rp ' . number_format($hitung2, 0, ",", ".");
+      $hasil3 = 'Rp ' . number_format($hitung3, 0, ",", ".");
     }
     ?>
 
@@ -185,7 +185,7 @@
                       <td>
                         <div class="d-flex px-2 py-1">
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">¥ 8</h6>
+                            <h6 class="mb-0 text-sm">¥ 10</h6>
                             <p class="text-xs text-secondary mb-0"><?php echo $shipping1 . 'r'; ?></p>
                           </div>
                         </div>
