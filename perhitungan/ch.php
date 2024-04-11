@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/logos/logo1.jpeg">
+  <link rel="icon" type="image/png" href="./assets/img/logos/head_icon.png">
   <title>
     Bulgogi GO & Korean Warehouse
   </title>
@@ -27,7 +27,7 @@
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="https://bulgogi.store/" target="_blank">
-        <img src="./assets/img/logos/logo2.png" class="navbar-brand-img h-100" alt="main_logo">
+        <img src="./assets/img/logos/main_icon.svg" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold">Bulgogi.id</span>
       </a>
     </div>
@@ -54,7 +54,7 @@
     </div>
     <div class="sidenav-footer mx-3 ">
       <div class="card card-plain shadow-none" id="sidenavCard">
-        <img class="w-30 mx-auto" src="./assets/img/logos/logo2.png" alt="sidebar_illustration">
+        <img class="w-30 mx-auto" src="./assets/img/logos/main_icon.svg" alt="sidebar_illustration">
         <div class="card-body text-center p-3 w-100 pt-0">
           <div class="docs-info">
             <h6 class="mb-0">Need help?</h6>
@@ -158,6 +158,8 @@
       $hasil2 = 'Rp ' . number_format($hitung2, 0, ",", ".");
       $hitung3 = ($harga_ch + $shipping3 / $coret_ch) * $rate_go + ($fee_co / $coret_ch + $fee_admin + $fee_wh);
       $hasil3 = 'Rp ' . number_format($hitung3, 0, ",", ".");
+      $hitung4 = ($harga_ch / $coret_ch) * $rate_go + ($fee_co / $coret_ch + $fee_admin + $fee_wh);
+      $hasil4 = 'Rp ' . number_format($hitung4, 0, ",", ".");
     }
     ?>
 
@@ -181,6 +183,26 @@
                     </tr>
                   </thead>
                   <tbody>
+                  <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">Free Shipping</h6>
+                            <p class="text-xs text-secondary mb-0">Free Shipping</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0"><?php echo '¥ ' . $harga_ch; ?></p>
+                        <p class="text-xs text-secondary mb-0"><?php echo $harga_ch . 'r' ?></p>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xm font-weight-bold mb-0"><?= $coret_ch ?></span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <span class="text-xm font-weight-bold mb-0"><?= $hasil4 ?></span>
+                      </td>
+                    </tr>
                     <tr>
                       <td>
                         <div class="d-flex px-2 py-1">
