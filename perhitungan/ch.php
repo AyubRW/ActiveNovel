@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="./assets/img/logos/head_icon.png">
   <title>
-    Bulgogi GO & Korean Warehouse
+    Bulgogi GO & Warehouse
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -149,6 +149,7 @@
       $shipping1 = 10;
       $shipping2 = 12;
       $shipping3 = 15;
+      $shipping4 = 0;
       $fee_admin = 3000;
       $fee_wh = 3000;
       $fee_co = 15000;
@@ -158,7 +159,7 @@
       $hasil2 = 'Rp ' . number_format($hitung2, 0, ",", ".");
       $hitung3 = ($harga_ch + $shipping3 / $coret_ch) * $rate_go + ($fee_co / $coret_ch + $fee_admin + $fee_wh);
       $hasil3 = 'Rp ' . number_format($hitung3, 0, ",", ".");
-      $hitung4 = ($harga_ch / $coret_ch) * $rate_go + ($fee_co / $coret_ch + $fee_admin + $fee_wh);
+      $hitung4 = ($harga_ch + $shipping4 / $coret_ch) * $rate_go + ($fee_co / $coret_ch + $fee_admin + $fee_wh);
       $hasil4 = 'Rp ' . number_format($hitung4, 0, ",", ".");
     }
     ?>
